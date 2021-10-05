@@ -1,0 +1,17 @@
+[package]
+name = "isere-fibre"
+version = "0.1.0"
+authors = ["runner"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1"
+bytes = "1"
+protobuf = { version = "2", features = ["bytes"] }
+reqwest = { version = "0", default-features = false, features = ["rustls-tls", "blocking"] }
+lettre = "0.10.0-rc.1"
+similar = "2"
+maud = "0.22"
+
+[build-dependencies]
+protobuf-codegen-pure = "2"
